@@ -39,5 +39,5 @@
 
 .header__piece__shadow {
   position: absolute;
-  box-shadow: 0 7px 10px 3px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 7px 30px 10px rgba(0, 0, 0, 0.45);
 }
