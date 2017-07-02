@@ -6,9 +6,9 @@
 
 body {
   background: var(--background-500-color);
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 p {
