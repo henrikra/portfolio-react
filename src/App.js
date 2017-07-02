@@ -3,50 +3,72 @@ import {Motion, spring} from 'react-motion';
 
 import './App.css';
 
+const headerPieces = [
+  {
+    left: 60,
+    top: 20,
+    width: 30,
+    height: 65,
+  },
+  {
+    left: 5,
+    top: 5,
+    width: 40,
+    height: 45,
+  },
+  {
+    left: 15,
+    top: 5,
+    width: 50,
+    height: 65,
+  },
+]
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="header">
-          <h1 className="header__title">Henrik Raitasola</h1>
           <div className="header__pieces">
-            <Motion
-              defaultStyle={{z: 0}}
-              style={{z: spring(20)}}
-            >
-              {({z}) => (
-                <div 
-                  className="header__piece-wrap"
-                  style={{
-                    transform: `translateZ(${z}px)`,
-                  }}
-                >
+            {headerPieces.map(({left, top, width, height}) => (
+              <Motion
+                defaultStyle={{z: 0}}
+                style={{z: spring(20)}}
+              >
+                {({z}) => (
                   <div 
-                    className="header__piece" 
+                    className="header__piece-wrap"
                     style={{
-                      clipPath: 'polygon(15% 5%, 65% 5%, 65% 70%, 15% 70%)'
-                    }} 
-                  />
-                  <Motion
-                    defaultStyle={{opacity: 0}}
-                    style={{opacity: spring(1)}}
+                      transform: `translateZ(${z}px)`,
+                    }}
                   >
-                    {({opacity}) => (
-                      <div 
-                        className="header__piece__shadow" 
-                        style={{
-                          left: '15%',
-                          top: '5%',
-                          width: '50%',
-                          height: '65%',
-                          opacity,
-                        }}
-                      />
-                    )}
-                  </Motion>
-                </div>
-              )}
-            </Motion>
+                    <Motion
+                      defaultStyle={{opacity: 0}}
+                      style={{opacity: spring(1)}}
+                    >
+                      {({opacity}) => (
+                        <div 
+                          className="header__piece__shadow" 
+                          style={{
+                            left: `${left}%`, 
+                            top: `${top}%`, 
+                            width: `${width}%`, 
+                            height: `${height}%`, 
+                            opacity,
+                          }}
+                        />
+                      )}
+                    </Motion>
+                    <div 
+                      className="header__piece" 
+                      style={{
+                        clipPath: `polygon(${left}% ${top}%, ${left + width}% ${top}%, ${left + width}% ${top + height}%, ${left}% ${top + height}%)`
+                      }} 
+                    />
+                  </div>
+                )}
+              </Motion>
+            ))}
           </div>
         </div>
       </div>
