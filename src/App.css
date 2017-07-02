@@ -1,6 +1,23 @@
 :root {
   --header-background: url("./header-background.jpg");
   --primary-color: #5BD9FB;
+  --background-500-color: #3E3E48;
+}
+
+body {
+  background: var(--background-500-color);
+  font-size: 16px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  line-height: 25px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .header {
@@ -64,4 +81,65 @@
 .header__piece__shadow {
   position: absolute;
   box-shadow: 0 7px 30px 1px rgba(0, 0, 0, 0.45);
+}
+
+.next-section {
+  height: 1000px;
+  background: var(--background-500-color);
+  text-align: center;
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.react-logo {
+  margin: 30px auto 0;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  animation: spinnery 10s infinite linear;
+}
+
+.react-logo__ball {
+  width: 14px;
+  height: 14px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.react-logo__oval {
+  width: 80px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  opacity: 0.3;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.react-logo__oval--second {
+  transform: rotate(60deg);
+  left: 0;
+  top: 26px;
+}
+
+.react-logo__oval--third {
+  transform: rotate(-60deg);
+  left: 0;
+  top: 26px;
+}
+
+@keyframes spinnery {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(359deg);}
 }

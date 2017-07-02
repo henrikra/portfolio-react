@@ -130,6 +130,19 @@ class App extends Component {
             </StaggeredMotion>
           )}
         </div>
+        <section className="next-section">
+          <div className="container">
+            <h2 className="section-title">Diipadaa on mun juttu</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod tincidunt tellus in finibus. Pellentesque ultricies volutpat nulla non scelerisque. Fusce turpis tortor, ultricies quis neque vel, porta aliquet lacus. Pellentesque id arcu a ligula tincidunt efficitur vitae et nunc.</p>
+            <p>Pellentesque ultricies volutpat nulla non scelerisque. Fusce turpis tortor, ultricies quis neque vel, porta aliquet lacus. Pellentesque id arcu a ligula tincidunt efficitur vitae et nunc. Sed sed tempus mauris, a dignissim neque. Nunc sed orci vel tortor semper finibus. Fusce rutrum vitae mi et scelerisque. Etiam mollis, leo eget gravida accumsan, tortor lorem mattis leo, vitae sodales arcu ligula eget enim. Pellentesque eget auctor ante.</p>
+            <div className="react-logo">
+              <div className="react-logo__ball" />
+              <div className="react-logo__oval" />
+              <div className="react-logo__oval react-logo__oval--second" />
+              <div className="react-logo__oval react-logo__oval--third" />
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
