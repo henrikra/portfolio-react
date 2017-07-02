@@ -18,7 +18,7 @@ const headerPieces = [
   },
   {
     left: 15,
-    top: 5,
+    top: 10,
     width: 50,
     height: 65,
   },
@@ -38,7 +38,7 @@ class App extends Component {
             {headerPieces.map(({left, top, width, height}) => (
               <Motion
                 defaultStyle={{z: 0}}
-                style={{z: slowSpring(20)}}
+                style={{z: slowSpring(30)}}
               >
                 {({z}) => (
                   <div 
