@@ -70,7 +70,7 @@ class App extends Component {
           {this.state.showSecondaryTitle && (
             <Motion
               defaultStyle={{height: 0}}
-              style={{height: slowSpring(80)}}
+              style={{height: spring(80)}}
             >
               {({height}) => (
                 <div className="header__title-secondary-wrapper" style={{height}}>
