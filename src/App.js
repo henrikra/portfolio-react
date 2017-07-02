@@ -34,6 +34,19 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header">
+          <Motion
+            defaultStyle={{letterSpacing: 50, opacity: 0}}
+            style={{letterSpacing: slowSpring(20), opacity: slowSpring(1)}}
+          >
+            {({letterSpacing, opacity}) => (
+              <h1 
+                className="header__title"
+                style={{letterSpacing, opacity}}
+              >
+                Henrik Raitasola
+              </h1>
+            )}
+          </Motion>
           <StaggeredMotion
             defaultStyles={headerPieces.map(headerPiece => ({...headerPiece, z: 0}))}
             styles={prevInterpolatedStyles => prevInterpolatedStyles.map((_, i) => 

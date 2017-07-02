@@ -7,6 +7,18 @@
   background-image: var(--header-background);
   background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header__title {
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 1;
+  font-size: 72px;
+  white-space: nowrap;
 }
 
 .header__title {
