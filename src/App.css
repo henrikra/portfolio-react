@@ -1,5 +1,5 @@
 :root {
-  --header-background: url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?dpr=1&auto=format&fit=crop&q=80&cs=tinysrgb&crop=&bg=");
+  --header-background: url("./header-background.jpg");
 }
 
 .header {
@@ -19,6 +19,7 @@
   z-index: 1;
   font-size: 72px;
   white-space: nowrap;
+  text-shadow: 1px 1px 10px #000000;
 }
 
 .header__title {
