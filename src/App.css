@@ -101,7 +101,7 @@ p {
   width: 80px;
   height: 80px;
   position: relative;
-  animation: spinnery 10s infinite linear;
+  animation: meat-spin 10s infinite linear;
 }
 
 .react-logo__ball {
@@ -139,7 +139,7 @@ p {
   top: 26px;
 }
 
-@keyframes spinnery {
+@keyframes meat-spin {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(359deg);}
 }
