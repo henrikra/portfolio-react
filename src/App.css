@@ -1,5 +1,6 @@
 :root {
   --header-background: url("./header-background.jpg");
+  --primary-color: #5BD9FB;
 }
 
 .header {
@@ -15,14 +16,10 @@
 
 .header__title {
   text-transform: uppercase;
-  color: #ffffff;
   z-index: 1;
   font-size: 72px;
   white-space: nowrap;
   text-shadow: 1px 1px 10px #000000;
-}
-
-.header__title {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
