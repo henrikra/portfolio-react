@@ -30,69 +30,87 @@ const slowSpring = value => spring(value, {
 });
 
 class App extends Component {
+  state = {
+    showTitle: false,
+    showPieces: false,
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({showPieces: true});
+    }, 750);
+    setTimeout(() => {
+      this.setState({showTitle: true});
+    }, 2000);
+  }
+
   render() {
     return (
       <div className="App">
         <div className="header">
-          <Motion
-            defaultStyle={{letterSpacing: 50, opacity: 0}}
-            style={{letterSpacing: slowSpring(20), opacity: slowSpring(1)}}
-          >
-            {({letterSpacing, opacity}) => (
-              <h1 
-                className="header__title"
-                style={{letterSpacing, opacity}}
-              >
-                Henrik Raitasola
-              </h1>
-            )}
-          </Motion>
-          <StaggeredMotion
-            defaultStyles={headerPieces.map(headerPiece => ({...headerPiece, z: 0}))}
-            styles={prevInterpolatedStyles => prevInterpolatedStyles.map((_, i) => 
-              i === 0
-              ? {z: slowSpring(40)}
-              : {z: slowSpring(prevInterpolatedStyles[i - 1].z)}
-            )}
-          >
-            {interpolatingStyles => (
-              <div className="header__pieces">
-                {interpolatingStyles.map((style, i) =>
-                  <div 
-                    key={i}
-                    className="header__piece-wrap"
-                    style={{
-                      transform: `translateZ(${style.z}px)`,
-                    }}
-                  >
-                    <Motion
-                      defaultStyle={{opacity: 0}}
-                      style={{opacity: slowSpring(1)}}
-                    >
-                      {({opacity}) => (
-                        <div 
-                          className="header__piece__shadow" 
-                          style={{
-                            left: `${style.left}%`, 
-                            top: `${style.top}%`, 
-                            width: `${style.width}%`, 
-                            height: `${style.height}%`, 
-                            opacity,
-                          }}
-                        />
-                      )}
-                    </Motion>
+          {this.state.showTitle && (
+            <Motion
+              defaultStyle={{letterSpacing: 50, opacity: 0}}
+              style={{letterSpacing: slowSpring(20), opacity: slowSpring(1)}}
+            >
+              {({letterSpacing, opacity}) => (
+                <h1 
+                  className="header__title"
+                  style={{letterSpacing, opacity, transform: 'translateZ(150px)'}}
+                >
+                  Henrik Raitasola
+                </h1>
+              )}
+            </Motion>
+          )}
+          {this.state.showPieces && (
+            <StaggeredMotion
+              defaultStyles={headerPieces.map(headerPiece => ({...headerPiece, z: 0}))}
+              styles={prevInterpolatedStyles => prevInterpolatedStyles.map((_, i) => 
+                i === 0
+                ? {z: slowSpring(50)}
+                : {z: slowSpring(prevInterpolatedStyles[i - 1].z)}
+              )}
+            >
+              {interpolatingStyles => (
+                <div className="header__pieces">
+                  {interpolatingStyles.map((style, i) =>
                     <div 
-                      className="header__piece" 
+                      key={i}
+                      className="header__piece-wrap"
                       style={{
-                        clipPath: `polygon(${style.left}% ${style.top}%, ${style.left + style.width}% ${style.top}%, ${style.left + style.width}% ${style.top + style.height}%, ${style.left}% ${style.top + style.height}%)`
-                      }} 
-                    />
-                  </div>
-                )}
-              </div>
-            )}
-          </StaggeredMotion>
+                        transform: `translateZ(${style.z}px)`,
+                      }}
+                    >
+                      <Motion
+                        defaultStyle={{opacity: 0}}
+                        style={{opacity: slowSpring(1)}}
+                      >
+                        {({opacity}) => (
+                          <div 
+                            className="header__piece__shadow" 
+                            style={{
+                              left: `${style.left}%`, 
+                              top: `${style.top}%`, 
+                              width: `${style.width}%`, 
+                              height: `${style.height}%`, 
+                              opacity,
+                            }}
+                          />
+                        )}
+                      </Motion>
+                      <div 
+                        className="header__piece" 
+                        style={{
+                          clipPath: `polygon(${style.left}% ${style.top}%, ${style.left + style.width}% ${style.top}%, ${style.left + style.width}% ${style.top + style.height}%, ${style.left}% ${style.top + style.height}%)`
+                        }} 
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+            </StaggeredMotion>
+          )}
         </div>
       </div>
     );
