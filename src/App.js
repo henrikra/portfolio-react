@@ -55,7 +55,7 @@ class App extends Component {
           {this.state.showTitle && (
             <Motion
               defaultStyle={{letterSpacing: 50, opacity: 0}}
-              style={{letterSpacing: slowSpring(20), opacity: slowSpring(1)}}
+              style={{letterSpacing: slowSpring(15), opacity: slowSpring(1)}}
             >
               {({letterSpacing, opacity}) => (
                 <h1 
