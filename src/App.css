@@ -130,13 +130,13 @@ p {
 .react-logo__oval--second {
   transform: rotate(60deg);
   left: 0;
-  top: 26px;
+  top: 25px;
 }
 
 .react-logo__oval--third {
   transform: rotate(-60deg);
   left: 0;
-  top: 26px;
+  top: 25px;
 }
 
 @keyframes meat-spin {
