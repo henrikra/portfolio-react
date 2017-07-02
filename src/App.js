@@ -33,6 +33,7 @@ class App extends Component {
   state = {
     showTitle: false,
     showPieces: false,
+    showSecondaryTitle: false,
   }
 
   componentDidMount() {
@@ -42,6 +43,9 @@ class App extends Component {
     setTimeout(() => {
       this.setState({showTitle: true});
     }, 2000);
+    setTimeout(() => {
+      this.setState({showSecondaryTitle: true});
+    }, 3000);
   }
 
   render() {
@@ -56,10 +60,24 @@ class App extends Component {
               {({letterSpacing, opacity}) => (
                 <h1 
                   className="header__title"
-                  style={{letterSpacing, opacity, transform: 'translateZ(150px)'}}
+                  style={{letterSpacing, opacity}}
                 >
                   Henrik Raitasola
                 </h1>
+              )}
+            </Motion>
+          )}
+          {this.state.showSecondaryTitle && (
+            <Motion
+              defaultStyle={{height: 0}}
+              style={{height: slowSpring(80)}}
+            >
+              {({height}) => (
+                <div className="header__title-secondary-wrapper" style={{height}}>
+                  <h4 className="header__title-secondary">
+                    React developer
+                  </h4>
+                </div>
               )}
             </Motion>
           )}

@@ -9,6 +9,7 @@
   background-size: cover;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -21,6 +22,19 @@
   white-space: nowrap;
   text-shadow: 1px 1px 10px #000000;
   color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header__title-secondary-wrapper {
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.header__title-secondary {
+  color: var(--primary-color);
+  font-size: 48px;
   text-transform: uppercase;
   margin: 0;
 }
