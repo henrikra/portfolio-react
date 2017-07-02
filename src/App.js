@@ -22,7 +22,12 @@ const headerPieces = [
     width: 50,
     height: 65,
   },
-]
+];
+
+const slowSpring = value => spring(value, {
+  stiffness: 53,
+  damping: 27,
+});
 
 class App extends Component {
   render() {
@@ -33,7 +38,7 @@ class App extends Component {
             {headerPieces.map(({left, top, width, height}) => (
               <Motion
                 defaultStyle={{z: 0}}
-                style={{z: spring(20)}}
+                style={{z: slowSpring(20)}}
               >
                 {({z}) => (
                   <div 
@@ -44,7 +49,7 @@ class App extends Component {
                   >
                     <Motion
                       defaultStyle={{opacity: 0}}
-                      style={{opacity: spring(1)}}
+                      style={{opacity: slowSpring(1)}}
                     >
                       {({opacity}) => (
                         <div 
