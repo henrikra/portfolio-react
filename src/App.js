@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Motion, spring} from 'react-motion';
+import {Motion, spring, StaggeredMotion} from 'react-motion';
 
 import './App.css';
 
@@ -35,45 +35,52 @@ class App extends Component {
       <div className="App">
         <div className="header">
           <div className="header__pieces">
-            {headerPieces.map(({left, top, width, height}) => (
-              <Motion
-                defaultStyle={{z: 0}}
-                style={{z: slowSpring(30)}}
-              >
-                {({z}) => (
-                  <div 
-                    className="header__piece-wrap"
-                    style={{
-                      transform: `translateZ(${z}px)`,
-                    }}
-                  >
-                    <Motion
-                      defaultStyle={{opacity: 0}}
-                      style={{opacity: slowSpring(1)}}
-                    >
-                      {({opacity}) => (
-                        <div 
-                          className="header__piece__shadow" 
-                          style={{
-                            left: `${left}%`, 
-                            top: `${top}%`, 
-                            width: `${width}%`, 
-                            height: `${height}%`, 
-                            opacity,
-                          }}
-                        />
-                      )}
-                    </Motion>
+            <StaggeredMotion
+              defaultStyles={headerPieces.map(headerPiece => ({...headerPiece, z: 0}))}
+              styles={prevInterpolatedStyles => prevInterpolatedStyles.map((_, i) => 
+                i === 0
+                ? {z: slowSpring(40)}
+                : {z: slowSpring(prevInterpolatedStyles[i - 1].z)}
+              )}
+            >
+              {interpolatingStyles => (
+                <div>
+                  {interpolatingStyles.map((style, i) =>
                     <div 
-                      className="header__piece" 
+                      key={i}
+                      className="header__piece-wrap"
                       style={{
-                        clipPath: `polygon(${left}% ${top}%, ${left + width}% ${top}%, ${left + width}% ${top + height}%, ${left}% ${top + height}%)`
-                      }} 
-                    />
-                  </div>
-                )}
-              </Motion>
-            ))}
+                        transform: `translateZ(${style.z}px)`,
+                      }}
+                    >
+                      <Motion
+                        defaultStyle={{opacity: 0}}
+                        style={{opacity: slowSpring(1)}}
+                      >
+                        {({opacity}) => (
+                          <div 
+                            className="header__piece__shadow" 
+                            style={{
+                              left: `${style.left}%`, 
+                              top: `${style.top}%`, 
+                              width: `${style.width}%`, 
+                              height: `${style.height}%`, 
+                              opacity,
+                            }}
+                          />
+                        )}
+                      </Motion>
+                      <div 
+                        className="header__piece" 
+                        style={{
+                          clipPath: `polygon(${style.left}% ${style.top}%, ${style.left + style.width}% ${style.top}%, ${style.left + style.width}% ${style.top + style.height}%, ${style.left}% ${style.top + style.height}%)`
+                        }} 
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+            </StaggeredMotion>
           </div>
         </div>
       </div>
