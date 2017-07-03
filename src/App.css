@@ -162,7 +162,7 @@ p {
 .case__image {
   width: 200px;
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 0;
   transform: rotate(-40deg);
   transition: all 400ms ease-out;
@@ -182,7 +182,7 @@ p {
 }
 
 .case__image--third {
-  top: 60px;
+  top: 0;
 }
 
 .case__details {
