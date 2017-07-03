@@ -130,7 +130,7 @@ class App extends Component {
             </StaggeredMotion>
           )}
         </div>
-        <section className="next-section">
+        <section className="intro-section">
           <div className="container">
             <h2 className="section-title">React on mun juttu!</h2>
             <p>Ihastuin Reactiin jo 2015 vuonna ja siitä asti olemme olleet parhaita kavereita. Nyt hänen kanssaan on tullut tehtyä projekteja web maailmassa sekä mobiilikehityksessä React Nativen avulla. Funktionaalinen ohjelmointi tyyli on myös mieluista varsinkin datan mälväämisessä.</p>
@@ -140,6 +140,27 @@ class App extends Component {
               <div className="react-logo__oval" />
               <div className="react-logo__oval react-logo__oval--second" />
               <div className="react-logo__oval react-logo__oval--third" />
+            </div>
+          </div>
+        </section>
+        <section className="showcase-section">
+          <div className="container">
+            <div className="case">
+              <div className="case__images">
+                <img className="case__image case__image--third" src={require('./wolt-partner-prebooked-hours.png')} alt="wolt-partner-login"/>
+                <img className="case__image case__image--second" src={require('./wolt-partner-map.png')} alt="wolt-partner-login"/>
+                <img className="case__image" src={require('./wolt-partner-login.png')} alt="wolt-partner-login"/>
+              </div>
+              <div className="case__details">
+                <h4 className="case__title">Wolt Parner App</h4>
+                <ul className="case__features">
+                  <li className="case__feature">React Native</li>
+                  <li className="case__feature">Redux</li>
+                  <li className="case__feature">Redux Saga</li>
+                  <li className="case__feature">Ramda</li>
+                </ul>
+                <p className="case__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a sapien suscipit leo rutrum dignissim. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.</p>
+              </div>
             </div>
           </div>
         </section>

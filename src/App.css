@@ -85,8 +85,7 @@ p {
   box-shadow: 0 7px 30px 1px rgba(0, 0, 0, 0.45);
 }
 
-.next-section {
-  height: 1000px;
+.intro-section {
   background: var(--background-500-color);
   text-align: center;
   padding: 100px 0;
@@ -144,4 +143,57 @@ p {
 @keyframes meat-spin {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(359deg);}
+}
+
+.showcase-section {
+  background: var(--background-500-color);
+  padding: 100px 0;
+}
+
+.case {
+  display: flex;
+}
+
+.case__images {
+  position: relative;
+  flex: 1;
+}
+
+.case__image {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-40deg);
+  transition: all 400ms ease-out;
+}
+
+.case__image:hover {
+  cursor: pointer;
+}
+
+.case__image-active {
+  left: 50%;
+  transform: rotate(0deg);
+}
+
+.case__image--second {
+  top: 30px;
+}
+
+.case__image--third {
+  top: 60px;
+}
+
+.case__details {
+  flex: 1;
+}
+
+.case__title {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.case__features {
+  padding-left: 25px;
 }
