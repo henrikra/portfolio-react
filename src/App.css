@@ -1,6 +1,6 @@
 :root {
   --header-background: url("./header-background.jpg");
-  --primary-color: #5BD9FB;
+  --primary-color: #15B1EE;
   --background-500-color: #0C172B;
 }
 
@@ -17,7 +17,7 @@ p {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
 }
