@@ -152,24 +152,28 @@ p {
 
 .case {
   display: flex;
+  padding-bottom: 200px;
 }
 
 .case__images {
   position: relative;
   flex: 1;
+  animation: float 6s ease-in-out infinite;
 }
 
 .case__image {
   width: 200px;
   position: absolute;
-  top: 60px;
+  top: 80px;
   left: 0;
-  transform: rotate(-40deg);
+  transform: rotate(-30deg);
   transition: all 400ms ease-out;
 }
 
 .case__image:hover {
   cursor: pointer;
+  transform: scale(1.2) rotate(-10deg);
+  left: 40px;
 }
 
 .case__image-active {
@@ -178,7 +182,7 @@ p {
 }
 
 .case__image--second {
-  top: 30px;
+  top: 40px;
 }
 
 .case__image--third {
@@ -196,4 +200,16 @@ p {
 
 .case__features {
   padding-left: 25px;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
