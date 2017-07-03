@@ -233,7 +233,11 @@ p {
 }
 
 .contacts {
-  flex: 1
+  flex: 1;
+  padding-left: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .my-picture__caption {
@@ -244,4 +248,53 @@ p {
   right: calc(-1 * var(--from-edge));
   left: var(--from-edge);
   padding: 20px;
+}
+
+.contact {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact::before {
+  margin-right: 10px;
+  content: '{';
+  transform: translateX(20px);
+  display: inline-block;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.contact:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact::after {
+  margin-left: 10px;
+  content: '}';
+  transform: translateX(-20px);
+  display: inline-block;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.contact__icon {
+  font-size: 36px;
+  width: 50px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.contact__title {
+  font-size: 22px;
+}
+
+.section-title {
+  text-align: center;
 }
