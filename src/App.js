@@ -177,7 +177,7 @@ class App extends Component {
                 </div>
                 <div className="contact contact--small">
                   <i className="contact__icon contact__icon--small fa fa-envelope" aria-hidden="true" />
-                  <span className="contact__title">henrik@raitasola.fi</span>
+                  <span className="contact__title">henrik.raitasola@gmail.com</span>
                 </div>
                 <div className="contact">
                   <i className="contact__icon fa fa-github" aria-hidden="true" />
