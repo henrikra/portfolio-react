@@ -1,7 +1,10 @@
 {
-  "main.css": "static/css/main.6809a4f6.css",
-  "main.css.map": "static/css/main.6809a4f6.css.map",
-  "main.js": "static/js/main.a385a823.js",
-  "main.js.map": "static/js/main.a385a823.js.map",
-  "static\\media\\header-background.jpg": "static/media/header-background.2582dd9b.jpg"
+  "main.css": "static/css/main.7ab43c2e.css",
+  "main.css.map": "static/css/main.7ab43c2e.css.map",
+  "main.js": "static/js/main.e0270587.js",
+  "main.js.map": "static/js/main.e0270587.js.map",
+  "static\\media\\header-background.jpg": "static/media/header-background.2582dd9b.jpg",
+  "static\\media\\wolt-partner-login.png": "static/media/wolt-partner-login.9d8b21b0.png",
+  "static\\media\\wolt-partner-map.png": "static/media/wolt-partner-map.e02397eb.png",
+  "static\\media\\wolt-partner-prebooked-hours.png": "static/media/wolt-partner-prebooked-hours.2b84309a.png"
 }
