@@ -164,7 +164,6 @@ p {
 .case__image {
   width: 200px;
   position: absolute;
-  top: 80px;
   left: 0;
   transform: rotate(-30deg);
   transition: all 400ms ease-out;
@@ -172,21 +171,22 @@ p {
 
 .case__image:hover {
   cursor: pointer;
-  transform: scale(1.2) rotate(-10deg);
+}
+
+.case__image--active {
+  transform: scale(1.2) rotate(0deg);
   left: 40px;
+}
+
+.case__image--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px) rotate(-30deg);
 }
 
 .case__image-active {
   left: 50%;
   transform: rotate(0deg);
-}
-
-.case__image--second {
-  top: 40px;
-}
-
-.case__image--third {
-  top: 0;
 }
 
 .case__details {

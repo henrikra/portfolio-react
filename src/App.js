@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Motion, spring, StaggeredMotion} from 'react-motion';
 
+import CaseImages from './CaseImages';
+
 import './App.css';
 
 const headerPieces = [
@@ -146,11 +148,7 @@ class App extends Component {
         <section className="showcase-section">
           <div className="container">
             <div className="case">
-              <div className="case__images">
-                <img className="case__image" src={require('./wolt-partner-prebooked-hours.png')} alt="wolt-partner-login"/>
-                <img className="case__image case__image--second" src={require('./wolt-partner-map.png')} alt="wolt-partner-login"/>
-                <img className="case__image case__image--third" src={require('./wolt-partner-login.png')} alt="wolt-partner-login"/>
-              </div>
+              <CaseImages />
               <div className="case__details">
                 <h4 className="case__title">Wolt Parner App</h4>
                 <ul className="case__features">
