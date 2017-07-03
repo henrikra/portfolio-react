@@ -157,7 +157,7 @@ class App extends Component {
                   <li className="case__feature">Redux Saga</li>
                   <li className="case__feature">Ramda</li>
                 </ul>
-                <p className="case__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a sapien suscipit leo rutrum dignissim. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.</p>
+                <p className="case__description">Woltin lähettikumppanit käyttävät Wolt Partneria työkalunaan aina työskennellessään. Liityin projektiin sen alkuvaiheessa, joten kädenjälkeäni näkyy apissa paljon. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.</p>
               </div>
             </div>
           </div>
