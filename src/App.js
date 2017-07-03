@@ -162,6 +162,17 @@ class App extends Component {
             </div>
           </div>
         </section>
+        <section className="contact-section">
+          <div className="container">
+            <div className="contact-container">
+              <figure className="my-picture-container">
+                <img className="my-picture" src={require('./henrik.jpg')} alt="Picture of me"/>
+                <figcaption className="my-picture__caption">Tässä vielä kuva musta niin tunnistat kun nähdään!</figcaption>
+              </figure>
+              <div className="contacts"></div>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }

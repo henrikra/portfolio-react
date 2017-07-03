@@ -213,3 +213,35 @@ p {
 		transform: translatey(0px);
 	}
 }
+
+.contact-section {
+  padding: 100px 0;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.my-picture-container {
+  flex: 1;
+  position: relative;
+  margin: 0;
+}
+
+.my-picture {
+  max-width: 100%;
+}
+
+.contacts {
+  flex: 1
+}
+
+.my-picture__caption {
+  --from-edge: 30px;
+  background: var(--primary-color);
+  position: absolute;
+  bottom: var(--from-edge);
+  right: calc(-1 * var(--from-edge));
+  left: var(--from-edge);
+  padding: 20px;
+}
