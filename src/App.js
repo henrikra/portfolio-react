@@ -163,14 +163,19 @@ class App extends Component {
           </div>
         </section>
         <section className="contact-section">
-          <h2 className="section-title">Aloitetaanko hommat?!</h2>
-          <div className="container">
+          <div className="big-container">
+            <h2 className="section-title">Aloitetaanko hommat?!</h2>
             <div className="contact-container">
               <figure className="my-picture-container">
                 <img className="my-picture" src={require('./henrik.jpg')} alt="Picture of me"/>
                 <figcaption className="my-picture__caption">Tässä vielä kuva musta niin tunnistat kun nähdään!</figcaption>
               </figure>
               <div className="contacts">
+                <div className="marker">
+                  <div className="map-ball" />
+                  <div className="pin-effect" />
+                  <div className="pin-effect pin-effect--delay" />
+                </div>
                 <div className="contact">
                   <i className="contact__icon fa fa-mobile" aria-hidden="true" />
                   <span className="contact__title">0400 637916</span>
