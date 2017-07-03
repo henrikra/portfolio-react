@@ -318,6 +318,8 @@ p {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .contact:hover::before {
@@ -353,6 +355,7 @@ p {
   width: 50px;
   text-align: center;
   margin-right: 10px;
+  color: var(--primary-color);
 }
 
 .contact__title {

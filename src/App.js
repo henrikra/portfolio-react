@@ -176,22 +176,22 @@ class App extends Component {
                   <div className="pin-effect" />
                   <div className="pin-effect pin-effect--delay" />
                 </div>
-                <div className="contact">
+                <a className="contact" href="tel:+358400637916">
                   <i className="contact__icon fa fa-mobile" aria-hidden="true" />
                   <span className="contact__title">0400 637916</span>
-                </div>
-                <div className="contact contact--small">
+                </a>
+                <a className="contact" href="mailto:henrik.raitasola@gmail.com">
                   <i className="contact__icon contact__icon--small fa fa-envelope" aria-hidden="true" />
                   <span className="contact__title">henrik.raitasola@gmail.com</span>
-                </div>
-                <div className="contact">
+                </a>
+                <a className="contact" href="https://github.com/henrikra" target="_blank">
                   <i className="contact__icon fa fa-github" aria-hidden="true" />
                   <span className="contact__title">GitHub</span>
-                </div>
-                <div className="contact contact--small">
+                </a>
+                <a className="contact" href="https://linkedin.com/in/henrikraitasola" target="_blank">
                   <i className="contact__icon contact__icon--small fa fa-linkedin" aria-hidden="true" />
                   <span className="contact__title">LinkedIn</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
