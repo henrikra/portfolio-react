@@ -2,6 +2,7 @@
   --header-background: url("./header-background.jpg");
   --primary-color: #15B1EE;
   --background-500-color: #0C172B;
+  --background-400-color: #112444;
 }
 
 body {
@@ -147,7 +148,7 @@ p {
 
 .showcase-section {
   --skew-deg: 5deg;
-  background: #0C1742;
+  background: linear-gradient(var(--background-400-color), var(--background-500-color));
   padding-top: 100px;
   transform: skew(0deg, calc(-1 * var(--skew-deg)));
   margin-top: -100px;
