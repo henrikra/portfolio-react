@@ -164,6 +164,23 @@ class App extends Component {
                   </p>
                 </div>
               </div>
+              <div className="case">
+                <div className="case__details case__details--left">
+                  <h4 className="case__title">Työeläkeote</h4>
+                  <ul className="case__features">
+                    <li className="case__feature">React</li>
+                    <li className="case__feature">Flux</li>
+                    <li className="case__feature">Fludux</li>
+                    <li className="case__feature">Lodash</li>
+                  </ul>
+                  <p className="case__description">
+                    Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
+                  </p>
+                </div>
+                <div className="case__images">
+                  <img className="case__normal-image" src={require('./elo.png')} alt="Työeläkeote"/>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -187,10 +204,6 @@ class App extends Component {
                   <i className="contact__icon fa fa-mobile" aria-hidden="true" />
                   <span className="contact__title">0400 637916</span>
                 </a>
-                <a className="contact" href="mailto:henrik.raitasola@gmail.com">
-                  <i className="contact__icon contact__icon--small fa fa-envelope" aria-hidden="true" />
-                  <span className="contact__title">henrik.raitasola@gmail.com</span>
-                </a>
                 <a className="contact" href="https://github.com/henrikra" target="_blank">
                   <i className="contact__icon fa fa-github" aria-hidden="true" />
                   <span className="contact__title">GitHub</span>
@@ -198,6 +211,10 @@ class App extends Component {
                 <a className="contact" href="https://linkedin.com/in/henrikraitasola" target="_blank">
                   <i className="contact__icon contact__icon--small fa fa-linkedin" aria-hidden="true" />
                   <span className="contact__title">LinkedIn</span>
+                </a>
+                <a className="contact" href="mailto:henrik.raitasola@gmail.com">
+                  <i className="contact__icon contact__icon--small fa fa-envelope" aria-hidden="true" />
+                  <span className="contact__title">henrik.raitasola@gmail.com</span>
                 </a>
               </div>
             </div>
