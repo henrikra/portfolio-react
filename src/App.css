@@ -148,7 +148,7 @@ p {
 
 .showcase-section {
   --skew-deg: 5deg;
-  background: linear-gradient(var(--background-400-color), var(--background-500-color));
+  background: linear-gradient(var(--background-400-color), var(--background-500-color), var(--background-400-color));
   padding-top: 100px;
   transform: skew(0deg, calc(-1 * var(--skew-deg)));
   margin-top: -100px;
