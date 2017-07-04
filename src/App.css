@@ -155,7 +155,7 @@ a {
 .showcase-section {
   --skew-deg: 5deg;
   background: linear-gradient(var(--background-400-color), var(--background-500-color), var(--background-400-color));
-  padding-top: 100px;
+  padding: 100px 0;
   transform: skew(0deg, calc(-1 * var(--skew-deg)));
   margin-top: -100px;
 }
@@ -166,7 +166,10 @@ a {
 
 .case {
   display: flex;
-  padding-bottom: 200px;
+}
+
+.case + .case {
+  margin-top: 200px;
 }
 
 .case__images {
