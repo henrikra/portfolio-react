@@ -88,7 +88,7 @@ p {
 .intro-section {
   background: var(--background-500-color);
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 0 200px;
 }
 
 .section-title {
@@ -146,8 +146,15 @@ p {
 }
 
 .showcase-section {
-  background: var(--background-500-color);
-  padding: 100px 0;
+  --skew-deg: 5deg;
+  background: #0C1742;
+  padding-top: 100px;
+  transform: skew(0deg, calc(-1 * var(--skew-deg)));
+  margin-top: -100px;
+}
+
+.showcase-section__content {
+  transform: skew(0deg, var(--skew-deg));
 }
 
 .case {

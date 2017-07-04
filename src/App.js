@@ -146,20 +146,23 @@ class App extends Component {
           </div>
         </section>
         <section className="showcase-section">
-          <div className="container">
-            <div className="case">
-              <CaseImages />
-              <div className="case__details">
-                <h4 className="case__title">Wolt Parner App</h4>
-                <ul className="case__features">
-                  <li className="case__feature">React Native</li>
-                  <li className="case__feature">Redux</li>
-                  <li className="case__feature">Redux Saga</li>
-                  <li className="case__feature">Ramda</li>
-                </ul>
-                <p className="case__description">
-                  Woltin lähettikumppanit käyttävät Wolt Partneria työkalunaan aina työskennellessään. Liityin projektiin sen alkuvaiheessa, joten kädenjälkeäni näkyy apissa paljon. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
-                </p>
+          <div className="showcase-section__content">
+            <div className="container">
+              <h2 className="section-title">Tässä työnäytteitä</h2>
+              <div className="case">
+                <CaseImages />
+                <div className="case__details">
+                  <h4 className="case__title">Wolt Parner App</h4>
+                  <ul className="case__features">
+                    <li className="case__feature">React Native</li>
+                    <li className="case__feature">Redux</li>
+                    <li className="case__feature">Redux Saga</li>
+                    <li className="case__feature">Ramda</li>
+                  </ul>
+                  <p className="case__description">
+                    Woltin lähettikumppanit käyttävät Wolt Partneria työkalunaan aina työskennellessään. Liityin projektiin sen alkuvaiheessa, joten kädenjälkeäni näkyy apissa paljon. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
