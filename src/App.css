@@ -203,9 +203,11 @@ p {
 
 .case__details {
   flex: 1;
+  padding-left: 40px;
 }
 
 .case__details--left {
+  padding-left: 0;
   padding-right: 40px;
 }
 

@@ -181,6 +181,21 @@ class App extends Component {
                   <img className="case__normal-image" src={require('./elo.png')} alt="Työeläkeote"/>
                 </div>
               </div>
+              <div className="case">
+                <div className="case__images">
+                  <img className="case__normal-image" src={require('./elo.png')} alt="Työeläkeote"/>
+                </div>
+                <div className="case__details">
+                  <h4 className="case__title">Cloth card</h4>
+                  <ul className="case__features">
+                    <li className="case__feature">React Native</li>
+                    <li className="case__feature">Animated</li>
+                  </ul>
+                  <p className="case__description">
+                    Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
