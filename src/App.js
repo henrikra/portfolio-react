@@ -206,7 +206,7 @@ class App extends Component {
               <figure className="my-picture-container">
                 <img className="my-picture" src={require('./henrik.jpg')} alt="Picture of me"/>
                 <figcaption className="my-picture__caption">
-                  Tässä vielä kuva musta niin tunnistat kun nähdään!
+                  Tässä vielä kuva niin tunnistat kun nähdään!
                 </figcaption>
               </figure>
               <div className="contacts">
