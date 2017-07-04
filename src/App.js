@@ -183,7 +183,7 @@ class App extends Component {
               </div>
               <div className="case">
                 <div className="case__images">
-                  <img className="case__normal-image" src={require('./elo.png')} alt="Työeläkeote"/>
+                  <img className="case__normal-image" src={require('./cloth-card.gif')} alt="Työeläkeote"/>
                 </div>
                 <div className="case__details">
                   <h4 className="case__title">Cloth card</h4>
