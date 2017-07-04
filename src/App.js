@@ -160,7 +160,7 @@ class App extends Component {
                     <li className="case__feature">Ramda</li>
                   </ul>
                   <p className="case__description">
-                    Woltin lähettikumppanit käyttävät Wolt Partneria työkalunaan aina työskennellessään. Liityin projektiin sen alkuvaiheessa, joten kädenjälkeäni näkyy apissa paljon. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
+                    <a href="https://wolt.com/" target="_blank">Woltin</a> lähettikumppanit käyttävät Wolt Partneria työkalunaan aina työskennellessään. Liityin projektiin sen alkuvaiheessa, joten kädenjälkeäni näkyy apissa paljon. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
                   </p>
                 </div>
               </div>
@@ -174,7 +174,7 @@ class App extends Component {
                     <li className="case__feature">Lodash</li>
                   </ul>
                   <p className="case__description">
-                    Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
+                    Olin <a href="https://www.siili.com" target="_blank">Siilin</a> kautta konsulttina Elolla tekemässä työeläkeotetta.  Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
                   </p>
                 </div>
                 <div className="case__images">
@@ -192,7 +192,7 @@ class App extends Component {
                     <li className="case__feature">Animated</li>
                   </ul>
                   <p className="case__description">
-                    Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
+                    Tämän <a href="https://github.com/henrikra/clothCard" target="_blank">GitHubissa</a> olevan vapaa-ajanprojektin tarkoituksena oli kokeilla minkälaisia hyödyllisia animaatioita React Nativella saa tehtyä. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
                   </p>
                 </div>
               </div>

@@ -17,6 +17,11 @@ p {
   opacity: 0.7;
 }
 
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
