@@ -101,6 +101,8 @@ a {
 .section-title {
   font-size: 32px;
   color: #ffffff;
+  text-align: center;
+  margin-top: 0;
 }
 
 .react-logo {
@@ -243,7 +245,7 @@ a {
 }
 
 .contact-section {
-  padding: 100px 0;
+  padding: 150px 0 100px;
 }
 
 .big-container {
@@ -388,8 +390,4 @@ a {
 
 .contact__title {
   font-size: 22px;
-}
-
-.section-title {
-  text-align: center;
 }
