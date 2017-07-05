@@ -2,6 +2,9 @@
   --primary-color: #15B1EE;
   --background-400-color: #112444;
   --background-500-color: #0C172B;
+
+  --padding-500: 100px;
+  --padding-700: 200px;
 }
 
 body {
@@ -119,7 +122,7 @@ a {
 
 .intro-section {
   text-align: center;
-  padding: 100px 0 200px;
+  padding: var(--padding-500) 0 var(--padding-700);
 }
 
 .react-logo {
@@ -182,7 +185,7 @@ a {
     var(--background-500-color), 
     var(--background-400-color)
   );
-  padding: 100px 0;
+  padding: var(--padding-500) 0;
   transform: skewY(calc(-1 * var(--skew-deg)));
   margin-top: -100px;
 }
@@ -270,7 +273,7 @@ a {
 }
 
 .contact-section {
-  padding: 150px 0 100px;
+  padding: var(--padding-500) 0;
 }
 
 .contact-content {
@@ -412,4 +415,11 @@ a {
 
 .contact__title {
   font-size: 22px;
+}
+
+@media (max-width: 500px) {
+  :root {
+    --padding-500: 40px;
+    --padding-700: 150px;
+  }
 }
