@@ -237,6 +237,10 @@ a {
   text-align: center;
 }
 
+.case__images--mobile {
+  display: none;
+}
+
 .case__image {
   max-width: 100%;
   max-height: 400px;
@@ -444,7 +448,11 @@ a {
 
   .case {
     flex-direction: column;
-    --gutter: 70px;
+    --gutter: 60px;
+  }
+
+  .case--top-margin {
+    margin-top: 50px;
   }
 
   .case__details {
@@ -457,5 +465,17 @@ a {
 
   .case__image {
     max-height: 250px;
+  }
+
+  .case__images--mobile {
+    display: block;
+  }
+
+  .stack-images {
+    display: none;
+  }
+
+  .stack-image {
+    width: 150px;
   }
 }

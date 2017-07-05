@@ -172,6 +172,9 @@ class App extends Component {
               <h2>Tässä työnäytteitä</h2>
               <div className="case case--top-margin">
                 <StackImages />
+                <div className="case__images case__images--mobile">
+                  <img className="case__image" src={require('./img/wolt-partner-map.png')} alt="Työeläkeote tietokoneen näytöllä"/>
+                </div>
                 <div className="case__details">
                   <h4 className="case__title">Wolt Parner App</h4>
                   <ul className="case__features">

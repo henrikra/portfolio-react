@@ -18,7 +18,7 @@ class StackImages extends Component {
 
   render() {
     return (
-      <div className="case__images">
+      <div className="case__images stack-images">
         {this.state.images.map((image, index) => (
           <img 
             key={index}
