@@ -36,6 +36,7 @@ class App extends Component {
     showTitle: false,
     showPieces: false,
     showSecondaryTitle: false,
+    showDownArrow: false,
   }
 
   componentDidMount() {
@@ -48,12 +49,15 @@ class App extends Component {
     setTimeout(() => {
       this.setState({showSecondaryTitle: true});
     }, 3000);
+    setTimeout(() => {
+      this.setState({showDownArrow: true});
+    }, 5000);
   }
 
   render() {
     return (
       <div>
-        <div className="header">
+        <header className="header">
           {this.state.showTitle && (
             <Motion
               defaultStyle={{letterSpacing: 50, opacity: 0}}
@@ -129,7 +133,21 @@ class App extends Component {
               )}
             </StaggeredMotion>
           )}
-        </div>
+          {this.state.showDownArrow && (
+            <Motion
+              defaultStyle={{opacity: 0}}
+              style={{opacity: slowSpring(0.7)}}
+            >
+              {({opacity}) => (
+                <i 
+                  className="fa fa-level-down header__down" 
+                  aria-hidden="true"
+                  style={{opacity}}
+                />
+              )}
+            </Motion>
+          )}
+        </header>
         <section className="intro-section">
           <div className="container">
             <h2>React on mun juttu!</h2>

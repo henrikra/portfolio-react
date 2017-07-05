@@ -103,6 +103,20 @@ a {
   box-shadow: 0 7px 30px 1px rgba(0, 0, 0, 0.45);
 }
 
+.header__down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --size: 60px;
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+}
+
 .intro-section {
   text-align: center;
   padding: 100px 0 200px;
@@ -245,13 +259,13 @@ a {
 
 @keyframes float {
 	0% {
-		transform: translatey(0px);
+		transform: translateY(0px);
 	}
 	50% {
-		transform: translatey(-10px);
+		transform: translateY(-10px);
 	}
 	100% {
-		transform: translatey(0px);
+		transform: translateY(0px);
 	}
 }
 
