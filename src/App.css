@@ -159,14 +159,18 @@ a {
 
 .showcase-section {
   --skew-deg: 5deg;
-  background: linear-gradient(var(--background-400-color), var(--background-500-color), var(--background-400-color));
+  background: linear-gradient(
+    var(--background-400-color), 
+    var(--background-500-color), 
+    var(--background-400-color)
+  );
   padding: 100px 0;
-  transform: skew(0deg, calc(-1 * var(--skew-deg)));
+  transform: skewY(calc(-1 * var(--skew-deg)));
   margin-top: -100px;
 }
 
 .showcase-section__content {
-  transform: skew(0deg, var(--skew-deg));
+  transform: skewY(var(--skew-deg));
 }
 
 .case {
