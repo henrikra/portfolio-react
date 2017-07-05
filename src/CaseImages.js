@@ -4,9 +4,9 @@ import classNames from 'classnames';
 class CaseImages extends Component {
   state = {
     images: [
-      {file: require('./wolt-partner-prebooked-hours.png'), alt: 'wolt-partner-prebooked-hours'},
-      {file: require('./wolt-partner-map.png'), alt: 'wolt-partner-map'},
-      {file: require('./wolt-partner-login.png'), alt: 'wolt-partner-login'},
+      {file: require('./img/wolt-partner-prebooked-hours.png'), alt: 'wolt-partner-prebooked-hours'},
+      {file: require('./img/wolt-partner-map.png'), alt: 'wolt-partner-map'},
+      {file: require('./img/wolt-partner-login.png'), alt: 'wolt-partner-login'},
     ]
   }
 

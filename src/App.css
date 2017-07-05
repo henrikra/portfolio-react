@@ -1,5 +1,5 @@
 :root {
-  --header-background: url("./header-background.jpg");
+  --header-background: url("./img/header-background.jpg");
   --primary-color: #15B1EE;
   --background-500-color: #0C172B;
   --background-400-color: #112444;
@@ -274,7 +274,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("./helsinki-map.png");
+  background-image: url("./img/helsinki-map.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

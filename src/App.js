@@ -178,12 +178,12 @@ class App extends Component {
                   </p>
                 </div>
                 <div className="case__images">
-                  <img className="case__normal-image" src={require('./elo.png')} alt="Työeläkeote"/>
+                  <img className="case__normal-image" src={require('./img/elo.png')} alt="Työeläkeote"/>
                 </div>
               </div>
               <div className="case">
                 <div className="case__images">
-                  <img className="case__normal-image" src={require('./cloth-card.gif')} alt="Työeläkeote"/>
+                  <img className="case__normal-image" src={require('./img/cloth-card.gif')} alt="Työeläkeote"/>
                 </div>
                 <div className="case__details">
                   <h4 className="case__title">Cloth card</h4>
@@ -204,7 +204,7 @@ class App extends Component {
             <h2 className="section-title">Aloitetaanko hommat?!</h2>
             <div className="contact-container">
               <figure className="my-picture-container">
-                <img className="my-picture" src={require('./henrik.jpg')} alt="Picture of me"/>
+                <img className="my-picture" src={require('./img/henrik.jpg')} alt="Picture of me"/>
                 <figcaption className="my-picture__caption">
                   Tässä vielä kuva niin tunnistat kun nähdään!
                 </figcaption>
