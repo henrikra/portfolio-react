@@ -480,7 +480,7 @@ a {
   }
 
   .contact-content {
-    flex-direction: column;
+    display: block;
   }
 
   .contacts {
