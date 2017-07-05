@@ -30,9 +30,14 @@ a {
 }
 
 .container {
-  max-width: 900px;
+  --max-width: 990px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container--big {
+  --max-width: 1300px;
 }
 
 .header {
@@ -255,24 +260,28 @@ a {
   padding: 150px 0 100px;
 }
 
-.big-container {
-  margin: 0 auto;
-  max-width: 1300px;
-  padding: 0 15px;
-}
-
-.contact-container {
+.contact-content {
   display: flex;
 }
 
-.my-picture-container {
+.me {
   flex: 1;
   position: relative;
   margin: 0;
 }
 
-.my-picture {
+.me__image {
   max-width: 100%;
+}
+
+.me__caption {
+  --from-edge: 30px;
+  background: var(--primary-color);
+  position: absolute;
+  bottom: var(--from-edge);
+  right: calc(-1 * var(--from-edge));
+  left: var(--from-edge);
+  padding: 20px;
 }
 
 .contacts {
@@ -288,17 +297,17 @@ a {
   position: relative;
 }
 
-.marker {
-  --marker-size: 70px;
-  width: var(--marker-size);
-  height: var(--marker-size);
+.pin {
+  --size: 70px;
+  width: var(--size);
+  height: var(--size);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.map-ball {
+.pin__ball {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -311,25 +320,24 @@ a {
   z-index: 1;
 }
 
-.pin-effect {
-  width: var(--marker-size);
-  height: var(--marker-size);
+.pin__pulse {
+  width: var(--size);
+  height: var(--size);
   position: absolute;
   top: 0;
-  display: block;
   background: rgba(21, 177, 238, 0.3);
   border-radius: 50%;
   opacity: 0;
   animation: pulsate 2000ms ease-out infinite;
 }
 
-.pin-effect--delay {
+.pin__pulse--delay {
   animation: pulsate 2000ms ease-out 450ms infinite;
 }
 
 @keyframes pulsate {
   0% {
-    transform: scale(0.1);
+    transform: scale(0.05);
     opacity: 0;
   }
   50% {
@@ -339,16 +347,6 @@ a {
     transform: scale(1.2);
     opacity: 0;
   }
-}
-
-.my-picture__caption {
-  --from-edge: 30px;
-  background: var(--primary-color);
-  position: absolute;
-  bottom: var(--from-edge);
-  right: calc(-1 * var(--from-edge));
-  left: var(--from-edge);
-  padding: 20px;
 }
 
 .contact {
