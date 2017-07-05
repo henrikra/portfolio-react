@@ -1,8 +1,8 @@
 :root {
   --header-background: url("./img/header-background.jpg");
   --primary-color: #15B1EE;
-  --background-500-color: #0C172B;
   --background-400-color: #112444;
+  --background-500-color: #0C172B;
 }
 
 body {
