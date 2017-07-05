@@ -4,9 +4,9 @@ import classNames from 'classnames';
 class StackImages extends Component {
   state = {
     images: [
-      {file: require('./img/wolt-partner-prebooked-hours.png'), alt: 'wolt-partner-prebooked-hours'},
-      {file: require('./img/wolt-partner-map.png'), alt: 'wolt-partner-map'},
-      {file: require('./img/wolt-partner-login.png'), alt: 'wolt-partner-login'},
+      {file: require('./img/wolt-partner-prebooked-hours.png'), alt: 'Wolt Partner tuntien varaus'},
+      {file: require('./img/wolt-partner-map.png'), alt: 'Wolt Partner karttanäkymä'},
+      {file: require('./img/wolt-partner-login.png'), alt: 'Wolt Partner kirjautumisnäkymä'},
     ]
   }
 
