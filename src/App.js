@@ -51,7 +51,7 @@ class App extends Component {
     }, 3000);
     setTimeout(() => {
       this.setState({showDownArrow: true});
-    }, 5000);
+    }, 4500);
   }
 
   render() {
