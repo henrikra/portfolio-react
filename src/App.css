@@ -105,8 +105,7 @@ a {
 }
 
 .react-logo {
-  margin: 30px auto 0;
-  display: inline-block;
+  margin: 40px auto 0;
   width: 80px;
   height: 80px;
   position: relative;
@@ -114,8 +113,9 @@ a {
 }
 
 .react-logo__ball {
-  width: 14px;
-  height: 14px;
+  --size: 14px;
+  width: var(--size);
+  height: var(--size);
   background: var(--primary-color);
   border-radius: 50%;
   left: 50%;
