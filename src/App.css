@@ -218,6 +218,7 @@ a {
 }
 
 .case {
+  --gutter: 200px;
   display: flex;
 }
 
@@ -226,7 +227,7 @@ a {
 }
 
 .case + .case {
-  margin-top: 200px;
+  margin-top: var(--gutter);
 }
 
 .case__images {
@@ -439,5 +440,22 @@ a {
 
   .header__secondary-title__text {
     font-size: 32px;
+  }
+
+  .case {
+    flex-direction: column;
+    --gutter: 70px;
+  }
+
+  .case__details {
+    padding-left: 0;
+  }
+
+  .case__details--left {
+    order: 1;
+  }
+
+  .case__image {
+    max-height: 250px;
   }
 }
