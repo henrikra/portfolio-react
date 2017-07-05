@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
 
-class CaseImages extends Component {
+class StackImages extends Component {
   state = {
     images: [
       {file: require('./img/wolt-partner-prebooked-hours.png'), alt: 'wolt-partner-prebooked-hours'},
@@ -40,4 +40,4 @@ class CaseImages extends Component {
   }
 }
 
-export default CaseImages;
+export default StackImages;

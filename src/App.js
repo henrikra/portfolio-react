@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Motion, spring, StaggeredMotion} from 'react-motion';
 
-import CaseImages from './CaseImages';
+import StackImages from './StackImages';
 
 import './App.css';
 
@@ -148,7 +148,7 @@ class App extends Component {
             <div className="container">
               <h2>Tässä työnäytteitä</h2>
               <div className="case case--top-margin">
-                <CaseImages />
+                <StackImages />
                 <div className="case__details">
                   <h4 className="case__title">Wolt Parner App</h4>
                   <ul className="case__features">
