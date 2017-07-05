@@ -422,4 +422,8 @@ a {
     --padding-500: 40px;
     --padding-700: 150px;
   }
+
+  .header__pieces {
+    display: none;
+  }
 }
