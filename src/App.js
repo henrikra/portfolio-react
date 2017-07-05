@@ -94,13 +94,11 @@ class App extends Component {
             >
               {interpolatingStyles => (
                 <div className="header__pieces">
-                  {interpolatingStyles.map((style, i) =>
+                  {interpolatingStyles.map(({z, left, top, width, height}, i) =>
                     <div 
                       key={i}
                       className="header__piece"
-                      style={{
-                        transform: `translateZ(${style.z}px)`,
-                      }}
+                      style={{transform: `translateZ(${z}px)`}}
                     >
                       <Motion
                         defaultStyle={{opacity: 0}}
@@ -110,10 +108,10 @@ class App extends Component {
                           <div 
                             className="header__piece__shadow" 
                             style={{
-                              left: `${style.left}%`, 
-                              top: `${style.top}%`, 
-                              width: `${style.width}%`, 
-                              height: `${style.height}%`, 
+                              left: `${left}%`, 
+                              top: `${top}%`, 
+                              width: `${width}%`, 
+                              height: `${height}%`, 
                               opacity,
                             }}
                           />
@@ -122,7 +120,7 @@ class App extends Component {
                       <div 
                         className="header__piece__mask" 
                         style={{
-                          clipPath: `polygon(${style.left}% ${style.top}%, ${style.left + style.width}% ${style.top}%, ${style.left + style.width}% ${style.top + style.height}%, ${style.left}% ${style.top + style.height}%)`
+                          clipPath: `polygon(${left}% ${top}%, ${left + width}% ${top}%, ${left + width}% ${top + height}%, ${left}% ${top + height}%)`
                         }} 
                       />
                     </div>
