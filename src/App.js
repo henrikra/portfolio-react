@@ -136,7 +136,7 @@ class App extends Component {
           {this.state.showDownArrow && (
             <Motion
               defaultStyle={{opacity: 0}}
-              style={{opacity: slowSpring(0.7)}}
+              style={{opacity: slowSpring(0.5)}}
             >
               {({opacity}) => (
                 <i 
