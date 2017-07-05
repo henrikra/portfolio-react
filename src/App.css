@@ -422,7 +422,7 @@ a {
   font-size: 22px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   :root {
     --padding-500: 40px;
     --padding-700: 150px;
