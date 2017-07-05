@@ -127,13 +127,13 @@ a {
 .react-logo__oval {
   width: 80px;
   height: 30px;
-  border-radius: 50%;
   background: var(--primary-color);
-  opacity: 0.3;
+  border-radius: 50%;
   left: 50%;
   top: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
+  opacity: 0.3;
 }
 
 .react-logo__oval--second {
@@ -149,8 +149,12 @@ a {
 }
 
 @keyframes meat-spin {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(359deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 .showcase-section {
