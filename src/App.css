@@ -503,7 +503,7 @@ a {
   }
 
   .me__caption {
-    --from-edge: 10px;
+    --from-edge: 0;
     padding: 15px;
   }
 
