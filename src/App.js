@@ -149,7 +149,7 @@ class App extends Component {
           <div className="showcase-section__content">
             <div className="container">
               <h2>Tässä työnäytteitä</h2>
-              <div className="case">
+              <div className="case case--top-margin">
                 <CaseImages />
                 <div className="case__details">
                   <h4 className="case__title">Wolt Parner App</h4>
@@ -178,12 +178,12 @@ class App extends Component {
                   </p>
                 </div>
                 <div className="case__images">
-                  <img className="case__normal-image" src={require('./img/elo.png')} alt="Työeläkeote"/>
+                  <img className="case__image" src={require('./img/elo.png')} alt="Työeläkeote"/>
                 </div>
               </div>
               <div className="case">
                 <div className="case__images">
-                  <img className="case__normal-image" src={require('./img/cloth-card.gif')} alt="Työeläkeote"/>
+                  <img className="case__image" src={require('./img/cloth-card.gif')} alt="Työeläkeote"/>
                 </div>
                 <div className="case__details">
                   <h4 className="case__title">Cloth card</h4>
