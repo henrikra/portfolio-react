@@ -506,4 +506,8 @@ a {
     --from-edge: 10px;
     padding: 15px;
   }
+
+  .header__down {
+    font-size: 24px;
+  }
 }
