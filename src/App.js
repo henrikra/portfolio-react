@@ -75,8 +75,8 @@ class App extends Component {
               style={{height: spring(80)}}
             >
               {({height}) => (
-                <div className="header__title-secondary-wrapper" style={{height}}>
-                  <h4 className="header__title-secondary">
+                <div className="header__secondary-title" style={{height}}>
+                  <h4 className="header__secondary-title__text">
                     React developer
                   </h4>
                 </div>
@@ -97,7 +97,7 @@ class App extends Component {
                   {interpolatingStyles.map((style, i) =>
                     <div 
                       key={i}
-                      className="header__piece-wrap"
+                      className="header__piece"
                       style={{
                         transform: `translateZ(${style.z}px)`,
                       }}
@@ -120,7 +120,7 @@ class App extends Component {
                         )}
                       </Motion>
                       <div 
-                        className="header__piece" 
+                        className="header__piece__mask" 
                         style={{
                           clipPath: `polygon(${style.left}% ${style.top}%, ${style.left + style.width}% ${style.top}%, ${style.left + style.width}% ${style.top + style.height}%, ${style.left}% ${style.top + style.height}%)`
                         }} 

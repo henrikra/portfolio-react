@@ -13,7 +13,6 @@ body {
 }
 
 p {
-  line-height: 25px;
   opacity: 0.7;
 }
 
@@ -52,13 +51,13 @@ a {
   margin: 0;
 }
 
-.header__title-secondary-wrapper {
+.header__secondary-title {
   overflow: hidden;
   z-index: 1;
   margin-top: 10px;
 }
 
-.header__title-secondary {
+.header__secondary-title__text {
   color: var(--primary-color);
   font-size: 48px;
   text-transform: uppercase;
@@ -74,13 +73,13 @@ a {
   perspective: 400px;
 }
 
- .header__piece-wrap {
+ .header__piece {
    position: absolute;
    width: 100%;
    height: 100%;
  }
 
-.header__piece {
+.header__piece__mask {
   background-image: var(--header-background);
   background-size: cover;
   width: 100%;
@@ -350,6 +349,7 @@ a {
   align-items: center;
   text-decoration: none;
   color: #ffffff;
+  font-weight: 400;
 }
 
 .contact:hover::before {
