@@ -12,6 +12,13 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
+h2 {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+}
+
 p {
   opacity: 0.7;
 }
@@ -95,13 +102,6 @@ a {
   background: var(--background-500-color);
   text-align: center;
   padding: 100px 0 200px;
-}
-
-.section-title {
-  font-size: 32px;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 0;
 }
 
 .react-logo {

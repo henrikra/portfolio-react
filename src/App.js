@@ -134,7 +134,7 @@ class App extends Component {
         </div>
         <section className="intro-section">
           <div className="container">
-            <h2 className="section-title">React on mun juttu!</h2>
+            <h2>React on mun juttu!</h2>
             <p>Ihastuin Reactiin jo 2015 vuonna ja siitä asti olemme olleet parhaita kavereita. Nyt hänen kanssaan on tullut tehtyä projekteja web-maailmassa sekä mobiilikehityksessä React Nativen avulla. Funktionaalinen ohjelmointityyli on myös mieluista varsinkin datan mälväämisessä.</p>
             <p>Pellentesque ultricies volutpat nulla non scelerisque. Fusce turpis tortor, ultricies quis neque vel, porta aliquet lacus. Pellentesque id arcu a ligula tincidunt efficitur vitae et nunc. Sed sed tempus mauris, a dignissim neque. Nunc sed orci vel tortor semper finibus. Fusce rutrum vitae mi et scelerisque. Etiam mollis, leo eget gravida accumsan, tortor lorem mattis leo, vitae sodales arcu ligula eget enim. Pellentesque eget auctor ante.</p>
             <div className="react-logo">
@@ -148,7 +148,7 @@ class App extends Component {
         <section className="showcase-section">
           <div className="showcase-section__content">
             <div className="container">
-              <h2 className="section-title">Tässä työnäytteitä</h2>
+              <h2>Tässä työnäytteitä</h2>
               <div className="case">
                 <CaseImages />
                 <div className="case__details">
@@ -201,7 +201,7 @@ class App extends Component {
         </section>
         <section className="contact-section">
           <div className="big-container">
-            <h2 className="section-title">Aloitetaanko hommat?!</h2>
+            <h2>Aloitetaanko hommat?!</h2>
             <div className="contact-container">
               <figure className="my-picture-container">
                 <img className="my-picture" src={require('./img/henrik.jpg')} alt="Picture of me"/>
