@@ -350,7 +350,6 @@ a {
 }
 
 .contact {
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -358,9 +357,8 @@ a {
   font-weight: 400;
 }
 
-.contact:hover::before {
-  opacity: 1;
-  transform: translateX(0);
+.contact + .contact {
+  margin-top: 20px;
 }
 
 .contact::before {
@@ -372,11 +370,6 @@ a {
   transition: transform 0.3s, opacity 0.2s;
 }
 
-.contact:hover::after {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 .contact::after {
   margin-left: 10px;
   content: '}';
@@ -384,6 +377,16 @@ a {
   display: inline-block;
   opacity: 0;
   transition: transform 0.3s, opacity 0.2s;
+}
+
+.contact:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact:hover::after {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .contact__icon {
