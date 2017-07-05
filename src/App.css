@@ -423,7 +423,21 @@ a {
     --padding-700: 150px;
   }
 
+  .header {
+    text-align: center;
+  }
+
   .header__pieces {
     display: none;
+  }
+
+  .header__title {
+    font-size: 56px;
+    white-space: normal;
+    line-height: 60px;
+  }
+
+  .header__secondary-title__text {
+    font-size: 32px;
   }
 }

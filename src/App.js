@@ -5,6 +5,8 @@ import StackImages from './StackImages';
 
 import './App.css';
 
+const isMobile = window.innerWidth <= 800 && window.innerHeight <= 600;
+
 const headerPieces = [
   {
     left: 60,
@@ -40,18 +42,21 @@ class App extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({showPieces: true});
-    }, 750);
+    const firstDelay = 750;
+    if (!isMobile) {
+      setTimeout(() => {
+        this.setState({showPieces: true});
+      }, firstDelay);
+    }
     setTimeout(() => {
       this.setState({showTitle: true});
-    }, 2000);
+    }, 2000 - (isMobile ? firstDelay : 0));
     setTimeout(() => {
       this.setState({showSecondaryTitle: true});
-    }, 3000);
+    }, 3000 - (isMobile ? firstDelay : 0));
     setTimeout(() => {
       this.setState({showDownArrow: true});
-    }, 4500);
+    }, 4500 - (isMobile ? firstDelay : 0));
   }
 
   render() {
@@ -60,8 +65,8 @@ class App extends Component {
         <header className="header">
           {this.state.showTitle && (
             <Motion
-              defaultStyle={{letterSpacing: 50, opacity: 0}}
-              style={{letterSpacing: slowSpring(15), opacity: slowSpring(1)}}
+              defaultStyle={{letterSpacing: isMobile ? 25 : 50, opacity: 0}}
+              style={{letterSpacing: slowSpring(isMobile ? 3 : 15), opacity: slowSpring(1)}}
             >
               {({letterSpacing, opacity}) => (
                 <h1 
