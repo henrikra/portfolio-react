@@ -23,9 +23,9 @@ class CaseImages extends Component {
           <img 
             key={index}
             className={classNames({
-              'case__image': true,
-              'case__image--active': this.state.activeIndex === index,
-              'case__image--hidden': Number.isInteger(this.state.activeIndex) && this.state.activeIndex !== index,
+              'stack-image': true,
+              'stack-image--active': this.state.activeIndex === index,
+              'stack-image--hidden': Number.isInteger(this.state.activeIndex) && this.state.activeIndex !== index,
             })} 
             src={image.file} 
             alt={image.alt} 
