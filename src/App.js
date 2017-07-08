@@ -157,7 +157,7 @@ class App extends Component {
           <div className="container">
             <h2>React on mun juttu!</h2>
             <p>Ihastuin Reactiin jo 2015 vuonna ja siitä asti olemme olleet parhaita kavereita. Nyt hänen kanssaan on tullut tehtyä projekteja web-maailmassa sekä mobiilikehityksessä React Nativen avulla. Funktionaalinen ohjelmointityyli on myös mieluista varsinkin datan mälväämisessä.</p>
-            <p>Pellentesque ultricies volutpat nulla non scelerisque. Fusce turpis tortor, ultricies quis neque vel, porta aliquet lacus. Pellentesque id arcu a ligula tincidunt efficitur vitae et nunc. Sed sed tempus mauris, a dignissim neque. Nunc sed orci vel tortor semper finibus. Fusce rutrum vitae mi et scelerisque. Etiam mollis, leo eget gravida accumsan, tortor lorem mattis leo, vitae sodales arcu ligula eget enim. Pellentesque eget auctor ante.</p>
+            <p>Tällä hetkellä minua kiinnostaa eniten React Native projektit, mutta myös React webissä. Pellentesque id arcu a ligula tincidunt efficitur vitae et nunc. Sed sed tempus mauris, a dignissim neque. Nunc sed orci vel tortor semper finibus. Fusce rutrum vitae mi et scelerisque. Etiam mollis, leo eget gravida accumsan, tortor lorem mattis leo, vitae sodales arcu ligula eget enim. Pellentesque eget auctor ante.</p>
             <div className="react-logo">
               <div className="react-logo__ball" />
               <div className="react-logo__oval" />
