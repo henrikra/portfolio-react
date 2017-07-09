@@ -156,8 +156,8 @@ class App extends Component {
         <section className="intro-section">
           <div className="container">
             <h2>React on mun juttu!</h2>
-            <p>Ihastuin Reactiin jo 2015 vuonna ja siitä asti olemme olleet parhaita kavereita. Nyt hänen kanssaan on tullut tehtyä projekteja web-maailmassa sekä mobiilikehityksessä React Nativen avulla. Funktionaalinen ohjelmointityyli on myös mieluista varsinkin datan mälväämisessä.</p>
-            <p>Tällä hetkellä minua kiinnostaa eniten React Native projektit, mutta myös React webissä. Pellentesque id arcu a ligula tincidunt efficitur vitae et nunc. Sed sed tempus mauris, a dignissim neque. Nunc sed orci vel tortor semper finibus. Fusce rutrum vitae mi et scelerisque. Etiam mollis, leo eget gravida accumsan, tortor lorem mattis leo, vitae sodales arcu ligula eget enim. Pellentesque eget auctor ante.</p>
+            <p>Ihastuin Reactiin jo 2015, josta asti olemme olleet parhaita kavereita. Olen tehnyt web-projekteja Reactilla, että mobiiliprojekteja React Nativella. Funktionaalinen ohjelmointi on iso osa ohjelmointityyliäni, koska se tekee koodista usein kaunista ja testattavaa.</p>
+            <p>Minulle tärkeintä on, että työskentelen projekteissa, joissa lopputuloksesta tulee niin hyvä, että projekti on alla olevissa työnäytteissä keulapaikalla, ja joissa taitoni pääsevät uudelle tasolle. Tällä hetkellä minua kiinnostaa eniten React Native mobiiliprojektit sekä React web-projektit.</p>
             <div className="react-logo">
               <div className="react-logo__ball" />
               <div className="react-logo__oval" />
