@@ -5,7 +5,7 @@ import StackImages from './StackImages';
 
 import './App.css';
 
-const isMobile = window.innerWidth <= 800 && window.innerHeight <= 600;
+const isMobile = window.innerWidth <= 800 || window.innerHeight <= 600;
 
 const headerPieces = [
   {
