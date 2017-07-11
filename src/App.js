@@ -189,7 +189,7 @@ class App extends Component {
             <h2>{translations.reactIsMyThing}</h2>
             <p>{translations.introParagraph1}</p>
             <p>{translations.introParagraph2}</p>
-            <div className="react-logo" onClick={this._onSetLanguageToItalian}>
+            <div className="react-logo">
               <div className="react-logo__ball" />
               <div className="react-logo__oval" />
               <div className="react-logo__oval react-logo__oval--second" />
