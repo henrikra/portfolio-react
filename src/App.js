@@ -201,7 +201,7 @@ class App extends Component {
               </div>
               <div className="case">
                 <div className="case__details case__details--left">
-                  <h4 className="case__title">Työeläkeote</h4>
+                  <h4 className="case__title">{translations.pensionRecord}</h4>
                   <ul className="case__features">
                     <li className="case__feature">React</li>
                     <li className="case__feature">Flux</li>
@@ -209,7 +209,12 @@ class App extends Component {
                     <li className="case__feature">Lodash</li>
                   </ul>
                   <p className="case__description">
-                    Olin <a href="https://www.siili.com" target="_blank" rel="noopener noreferrer">Siilin</a> kautta konsulttina Elolla tekemässä työeläkeotetta.  Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
+                    {
+                      translations.formatString(
+                        translations.pensionRecordDescription, 
+                        <a href="https://www.siili.com" target="_blank" rel="noopener noreferrer">{translations.siilis}</a>
+                      )
+                    }
                   </p>
                 </div>
                 <div className="case__images">
@@ -221,13 +226,18 @@ class App extends Component {
                   <img className="case__image" src={require('./img/cloth-card.gif')} alt="Cloth Card työnäyte"/>
                 </div>
                 <div className="case__details">
-                  <h4 className="case__title">Cloth card</h4>
+                  <h4 className="case__title">{translations.clothCard}</h4>
                   <ul className="case__features">
                     <li className="case__feature">React Native</li>
                     <li className="case__feature">Animated</li>
                   </ul>
                   <p className="case__description">
-                    Tämän <a href="https://github.com/henrikra/clothCard" target="_blank" rel="noopener noreferrer">GitHubissa</a> olevan vapaa-ajanprojektin tarkoituksena oli kokeilla minkälaisia hyödyllisia animaatioita React Nativella saa tehtyä. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
+                    {
+                      translations.formatString(
+                        translations.clothCardDescription, 
+                        <a href="https://github.com/henrikra/clothCard" target="_blank" rel="noopener noreferrer">{translations.atGitHub}</a>
+                      )
+                    }
                   </p>
                 </div>
               </div>
@@ -236,13 +246,11 @@ class App extends Component {
         </section>
         <section className="contact-section">
           <div className="container container--big">
-            <h2>Aloitetaanko hommat?</h2>
+            <h2>{translations.shouldWeStartWorking}</h2>
             <div className="contact-content">
               <figure className="me">
                 <img className="me__image" src={require('./img/henrik.jpg')} alt="Henrik Raitasola"/>
-                <figcaption className="me__caption">
-                  Tässä vielä kuva niin tunnistat kun nähdään!
-                </figcaption>
+                <figcaption className="me__caption">{translations.hereIsPictureOfMe}</figcaption>
               </figure>
               <div className="contacts">
                 <div className="pin">
