@@ -171,6 +171,7 @@ class App extends Component {
                 'language-selector--active': this.state.language === 'fi'
               })} 
               onClick={e => this.toggleLanguage('fi')}
+              disabled={this.state.language === 'fi'}
             >
               Suomeksi
             </button>
@@ -181,6 +182,7 @@ class App extends Component {
                 'language-selector--active': this.state.language === 'en'
               })} 
               onClick={e => this.toggleLanguage('en')}
+              disabled={this.state.language === 'en'}
             >
               In english
             </button>
