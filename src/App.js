@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Motion, spring, StaggeredMotion} from 'react-motion';
+import classNames from 'classnames';
 
 import StackImages from './StackImages';
 import translations from './translations';
@@ -61,8 +62,7 @@ class App extends Component {
     }, 4500 - (isMobile ? firstDelay : 0));
   }
 
-  toggleLanguage = () => {
-    const newLanguage = this.state.language === 'en' ? 'fi' : 'en';
+  toggleLanguage = newLanguage => {
     translations.setLanguage(newLanguage);
     this.setState({
       language: newLanguage,
@@ -165,7 +165,25 @@ class App extends Component {
         </header>
         <section className="intro-section">
           <div className="container">
-            <button onClick={this.toggleLanguage}>{this.state.language === 'en' ? 'fi' : 'en'}</button>
+            <button
+              className={classNames({
+                'language-selector': true,
+                'language-selector--active': this.state.language === 'fi'
+              })} 
+              onClick={e => this.toggleLanguage('fi')}
+            >
+              Suomeksi
+            </button>
+            <span className="language-separator"> / </span>
+            <button 
+              className={classNames({
+                'language-selector': true,
+                'language-selector--active': this.state.language === 'en'
+              })} 
+              onClick={e => this.toggleLanguage('en')}
+            >
+              In english
+            </button>
             <h2>{translations.reactIsMyThing}</h2>
             <p>{translations.introParagraph1}</p>
             <p>{translations.introParagraph2}</p>

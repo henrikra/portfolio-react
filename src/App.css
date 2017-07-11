@@ -422,6 +422,27 @@ a {
   font-size: 22px;
 }
 
+.language-selector {
+  background: none;
+  border: 0;
+  font-size: 18px;
+  font-family: 'Titillium Web', sans-serif;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.language-selector--active {
+  color: #ffffff;
+  font-weight: 400;
+  cursor: default;
+  outline: none;
+}
+
+.language-separator {
+  opacity: 0.7;
+}
+
 @media (max-width: 650px) {
   :root {
     --padding-500: 40px;
