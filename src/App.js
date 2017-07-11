@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Motion, spring, StaggeredMotion} from 'react-motion';
 
 import StackImages from './StackImages';
+import translations from './translations';
 
 import './App.css';
 
@@ -59,7 +60,13 @@ class App extends Component {
     }, 4500 - (isMobile ? firstDelay : 0));
   }
 
+  _onSetLanguageToItalian = () => {
+    translations.setLanguage('fi');
+    this.setState({});
+  }
+
   render() {
+    console.log('current', translations.getLanguage());
     return (
       <div>
         <header className="header">
@@ -73,7 +80,7 @@ class App extends Component {
                   className="header__title"
                   style={{letterSpacing, opacity}}
                 >
-                  Henrik Raitasola
+                  {translations.myName}
                 </h1>
               )}
             </Motion>
@@ -86,7 +93,7 @@ class App extends Component {
               {({height}) => (
                 <div className="header__secondary-title" style={{height}}>
                   <h4 className="header__secondary-title__text">
-                    React developer
+                    {translations.reactDeveloper}
                   </h4>
                 </div>
               )}
@@ -155,10 +162,10 @@ class App extends Component {
         </header>
         <section className="intro-section">
           <div className="container">
-            <h2>React on mun juttu!</h2>
-            <p>Ihastuin Reactiin jo 2015, josta asti olemme olleet parhaita kavereita. Olen tehnyt web-projekteja Reactilla, että mobiiliprojekteja React Nativella. Funktionaalinen ohjelmointi on iso osa ohjelmointityyliäni, koska se tekee koodista usein kaunista ja testattavaa.</p>
-            <p>Minulle tärkeintä on, että työskentelen projekteissa, joissa lopputuloksesta tulee niin hyvä, että projekti on alla olevissa työnäytteissä keulapaikalla, ja joissa taitoni pääsevät uudelle tasolle. Tällä hetkellä minua kiinnostaa eniten React Native mobiiliprojektit sekä React web-projektit.</p>
-            <div className="react-logo">
+            <h2>{translations.reactIsMyThing}</h2>
+            <p>{translations.introParagraph1}</p>
+            <p>{translations.introParagraph2}</p>
+            <div className="react-logo" onClick={this._onSetLanguageToItalian}>
               <div className="react-logo__ball" />
               <div className="react-logo__oval" />
               <div className="react-logo__oval react-logo__oval--second" />
@@ -169,14 +176,14 @@ class App extends Component {
         <section className="showcase-section">
           <div className="showcase-section__content">
             <div className="container">
-              <h2>Tässä työnäytteitä</h2>
+              <h2>{translations.workSamples}</h2>
               <div className="case case--top-margin">
                 <StackImages />
                 <div className="case__images case__images--mobile">
                   <img className="case__image" src={require('./img/wolt-partner-map.png')} alt="Työeläkeote tietokoneen näytöllä"/>
                 </div>
                 <div className="case__details">
-                  <h4 className="case__title">Wolt Parner App</h4>
+                  <h4 className="case__title">{translations.woltPartnerApp}</h4>
                   <ul className="case__features">
                     <li className="case__feature">React Native</li>
                     <li className="case__feature">Redux</li>
@@ -184,7 +191,7 @@ class App extends Component {
                     <li className="case__feature">Ramda</li>
                   </ul>
                   <p className="case__description">
-                    <a href="https://wolt.com/" target="_blank" rel="noopener noreferrer">Woltin</a> lähettikumppanit käyttävät Wolt Partneria työkalunaan aina työskennellessään. Liityin projektiin sen alkuvaiheessa, joten kädenjälkeäni näkyy apissa paljon. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.
+                    {translations.formatString(translations.woltPartnerDescription, <a href="https://wolt.com/" target="_blank" rel="noopener noreferrer">Woltin</a>)}
                   </p>
                 </div>
               </div>
