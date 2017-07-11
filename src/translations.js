@@ -24,7 +24,7 @@ export default new LocalizedStrings({
     myName: 'Henrik Raitasola',
     reactDeveloper: 'React developer',
     reactIsMyThing: 'React is my thing!',
-    introParagraph1: 'I fell in love with React in 2015 and ever since we have been BFF\'s. I have done web projects with React and also mobile projects with React Native. Functional programming is big part of my coding style because it makes code more beautiful and more testable.',
+    introParagraph1: 'I fell in love with React in 2015 and ever since we have been BFF\'s. I have done web projects with React and also mobile projects with React Native. Functional programming is a big part of my coding style because it makes code more beautiful and more testable.',
     introParagraph2: 'The most important thing for me when it comes to projects I am working on is that the end result is so good that it ends up at top place in my work samples. At the moment I am most interested in React Native projects and also web projects with React.',
     workSamples: 'Here are some work examples',
     woltPartnerApp: 'Wolt Partner App',
@@ -35,7 +35,7 @@ export default new LocalizedStrings({
     pensionRecordDescription: 'I was developing pension record at Elo as {0} consultant.',
     clothCard: 'Cloth card',
     atGitHub: 'at GitHub',
-    clothCardDescription: 'This free-time project is available {0}. The goal of this project was explore what kind of useful animations I could do with React Native.',
+    clothCardDescription: 'This free-time project is available {0}. The goal of this project was to explore what kind of useful animations I could do with React Native.',
     shouldWeStartWorking: 'Let\'s start working?',
     hereIsPictureOfMe: 'Here is a picture of me so you will recognize me!',
   }
