@@ -1,4 +1,4 @@
-import LocalizedStrings from 'react-localization';
+import LocalizedStrings from './react-localization/src/LocalizedStrings';
 
 export default new LocalizedStrings({
   fi: {
@@ -9,6 +9,7 @@ export default new LocalizedStrings({
     introParagraph2: 'Minulle tärkeintä on, että työskentelen projekteissa, joissa lopputuloksesta tulee niin hyvä, että projekti on alla olevissa työnäytteissä keulapaikalla, ja joissa taitoni pääsevät uudelle tasolle. Tällä hetkellä minua kiinnostaa eniten React Native mobiiliprojektit sekä React web-projektit.',
     workSamples: 'Tässä työnäytteitä',
     woltPartnerApp: 'Wolt Partner App',
+    wolts: 'Woltin',
     woltPartnerDescription: '{0} lähettikumppanit käyttävät Wolt Partneria työkalunaan aina työskennellessään. Liityin projektiin sen alkuvaiheessa, joten kädenjälkeäni näkyy apissa paljon. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.',
     pensionRecord: 'Työeläkeote',
     pensionRecordDescription: 'Olin Siilin kautta konsulttina Elolla tekemässä työeläkeotetta. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.',
@@ -25,7 +26,8 @@ export default new LocalizedStrings({
     introParagraph2: 'The most important thing for me when it comes to projects I am working on is that the end result is so good that it ends up at top place in my work samples. At the moment I am most interested in React Native projects and also web projects with React.',
     workSamples: 'Here are some work examples',
     woltPartnerApp: 'Wolt Partner App',
-    woltPartnerDescription: '{0} lähettikumppanit käyttävät Wolt Partneria työkalunaan aina työskennellessään. Liityin projektiin sen alkuvaiheessa, joten kädenjälkeäni näkyy apissa paljon. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.',
+    wolts: 'Wolt\'s',
+    woltPartnerDescription: '{0} courier partners use Wolt Partner as every day tool when doing deliveries. I joined the project early on so a lot what you see in the end result is my made by me.',
     pensionRecord: 'Työeläkeote',
     pensionRecordDescription: 'Olin Siilin kautta konsulttina Elolla tekemässä työeläkeotetta. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.',
     clothCard: 'Cloth card',
