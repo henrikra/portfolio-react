@@ -190,7 +190,12 @@ class App extends Component {
                     <li className="case__feature">Ramda</li>
                   </ul>
                   <p className="case__description">
-                    {translations.formatString(translations.woltPartnerDescription, <a href="https://wolt.com/" target="_blank" rel="noopener noreferrer">{translations.wolts}</a>)}
+                    {
+                      translations.formatString(
+                        translations.woltPartnerDescription, 
+                        <a href="https://wolt.com/" target="_blank" rel="noopener noreferrer">{translations.wolts}</a>
+                      )
+                    }
                   </p>
                 </div>
               </div>
