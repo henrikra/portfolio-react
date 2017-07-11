@@ -40,6 +40,7 @@ class App extends Component {
     showPieces: false,
     showSecondaryTitle: false,
     showDownArrow: false,
+    language: translations.getLanguage(),
   }
 
   componentDidMount() {
@@ -60,9 +61,12 @@ class App extends Component {
     }, 4500 - (isMobile ? firstDelay : 0));
   }
 
-  _onSetLanguageToItalian = () => {
-    translations.setLanguage('fi');
-    this.setState({});
+  toggleLanguage = () => {
+    const newLanguage = this.state.language === 'en' ? 'fi' : 'en';
+    translations.setLanguage(newLanguage);
+    this.setState({
+      language: newLanguage,
+    });
   }
 
   render() {
@@ -161,6 +165,7 @@ class App extends Component {
         </header>
         <section className="intro-section">
           <div className="container">
+            <button onClick={this.toggleLanguage}>{this.state.language === 'en' ? 'fi' : 'en'}</button>
             <h2>{translations.reactIsMyThing}</h2>
             <p>{translations.introParagraph1}</p>
             <p>{translations.introParagraph2}</p>
