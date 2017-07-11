@@ -1,4 +1,4 @@
-import LocalizedStrings from './react-localization/src/LocalizedStrings';
+import LocalizedStrings from 'react-localization';
 
 export default new LocalizedStrings({
   fi: {
