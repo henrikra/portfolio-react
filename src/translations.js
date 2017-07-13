@@ -13,7 +13,7 @@ export default new LocalizedStrings({
     woltPartnerDescription: '{0} lähettikumppanit käyttävät Wolt Partneria työkalunaan aina työskennellessään. Liityin projektiin sen alkuvaiheessa, joten kädenjälkeäni näkyy apissa paljon. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.',
     pensionRecord: 'Työeläkeote',
     siilis: 'Siilin',
-    pensionRecordDescription: 'Olin Siilin kautta konsulttina Elolla tekemässä työeläkeotetta. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.',
+    pensionRecordDescription: 'Olin {0} kautta konsulttina Elolla tekemässä työeläkeotetta. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.',
     clothCard: 'Cloth card',
     atGitHub: 'GitHubissa',
     clothCardDescription: 'Tämän {0} olevan vapaa-ajanprojektin tarkoituksena oli kokeilla minkälaisia hyödyllisia animaatioita React Nativella saa tehtyä. Vivamus mollis consectetur metus, mollis euismod nisi hendrerit vitae.',
