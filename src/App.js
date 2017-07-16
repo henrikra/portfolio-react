@@ -204,7 +204,9 @@ class App extends Component {
               <div className="case case--top-margin">
                 <StackImages />
                 <div className="case__images case__images--mobile">
-                  <img className="case__image" src={require('./img/wolt-partner-map.png')} alt="Työeläkeote tietokoneen näytöllä"/>
+                  <a href={require('./img/wolt-partner-map.png')}>
+                    <img className="case__image" src={require('./img/wolt-partner-map.png')} alt="Työeläkeote tietokoneen näytöllä"/>
+                  </a>
                 </div>
                 <div className="case__details">
                   <h4 className="case__title">{translations.woltPartnerApp}</h4>
@@ -243,12 +245,16 @@ class App extends Component {
                   </p>
                 </div>
                 <div className="case__images">
-                  <img className="case__image" src={require('./img/elo.png')} alt="Työeläkeote tietokoneen näytöllä"/>
+                  <a href={require('./img/elo.png')}>
+                    <img className="case__image" src={require('./img/elo.png')} alt="Työeläkeote tietokoneen näytöllä"/>
+                  </a>
                 </div>
               </div>
               <div className="case">
                 <div className="case__images">
-                  <img className="case__image" src={require('./img/cloth-card.gif')} alt="Cloth Card työnäyte"/>
+                  <a href={require('./img/cloth-card.gif')}>
+                    <img className="case__image" src={require('./img/cloth-card.gif')} alt="Cloth Card työnäyte"/>
+                  </a>
                 </div>
                 <div className="case__details">
                   <h4 className="case__title">{translations.clothCard}</h4>
