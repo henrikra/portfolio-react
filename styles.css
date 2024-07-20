@@ -117,14 +117,26 @@ h1, h2, h3 {
 }
 
 #process ol {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding-left: 2rem;
+    list-style-position: outside;
 }
 
 #process li {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 1rem;
 }
+
+#process h3 {
+    margin-bottom: 0.5rem;
+}
+
+#process p {
+    margin-left: 1.5rem;
+}
+
 
 /* Services Section */
 .services-container {
