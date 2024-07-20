@@ -1,14 +1,14 @@
 {
   "main.css": "static/css/main.bcaf80af.css",
   "main.css.map": "static/css/main.bcaf80af.css.map",
-  "main.js": "static/js/main.1f606c34.js",
-  "main.js.map": "static/js/main.1f606c34.js.map",
-  "static\\media\\cloth-card.gif": "static/media/cloth-card.f61c91aa.gif",
-  "static\\media\\elo.png": "static/media/elo.c8858cbc.png",
-  "static\\media\\header-background.jpg": "static/media/header-background.2582dd9b.jpg",
-  "static\\media\\helsinki-map.png": "static/media/helsinki-map.039d5f57.png",
-  "static\\media\\henrik.jpg": "static/media/henrik.4bd2fc29.jpg",
-  "static\\media\\wolt-partner-login.png": "static/media/wolt-partner-login.9d8b21b0.png",
-  "static\\media\\wolt-partner-map.png": "static/media/wolt-partner-map.e02397eb.png",
-  "static\\media\\wolt-partner-prebooked-hours.png": "static/media/wolt-partner-prebooked-hours.2b84309a.png"
+  "main.js": "static/js/main.d9dbed46.js",
+  "main.js.map": "static/js/main.d9dbed46.js.map",
+  "static/media/cloth-card.gif": "static/media/cloth-card.f61c91aa.gif",
+  "static/media/elo.png": "static/media/elo.c8858cbc.png",
+  "static/media/header-background.jpg": "static/media/header-background.2582dd9b.jpg",
+  "static/media/helsinki-map.png": "static/media/helsinki-map.039d5f57.png",
+  "static/media/henrik.jpg": "static/media/henrik.4bd2fc29.jpg",
+  "static/media/wolt-partner-login.png": "static/media/wolt-partner-login.9d8b21b0.png",
+  "static/media/wolt-partner-map.png": "static/media/wolt-partner-map.e02397eb.png",
+  "static/media/wolt-partner-prebooked-hours.png": "static/media/wolt-partner-prebooked-hours.2b84309a.png"
 }
